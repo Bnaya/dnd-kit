@@ -1,0 +1,19 @@
+.wrapper {
+}
+
+/**
+  Without it, when the scroll position is trimmed due to collapse,
+  There's a "jump" in the UI.
+  this makes the jump move pleasant
+
+  consider setting these values only when animation is active
+  consider to no apply it to the final list
+*/
+.wrapper > div > div {
+  transition: height 300ms;
+
+  /* this is also needed, can't describe with out a video :( */
+  /* bypass inline min-height: 100%; by library */
+  min-height: auto !important;
+  overflow: hidden;
+}

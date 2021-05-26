@@ -3,7 +3,7 @@ import React from 'react';
 import {SortableTree} from './SortableTree';
 
 export default {
-  title: 'Examples/Tree/Sortable',
+  title: 'Examples/Tree/Sortable Virtualized',
 };
 
 const Wrapper = ({children}: {children: React.ReactNode}) => (

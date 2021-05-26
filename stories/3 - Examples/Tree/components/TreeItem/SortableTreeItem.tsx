@@ -25,10 +25,14 @@ export function SortableTreeItem({id, depth, ...props}: Props) {
   } = useSortable({
     id,
     animateLayoutChanges,
+    transition: {
+      easing: 'linear',
+      duration: 300,
+    },
   });
   const style: CSSProperties = {
     transform: CSS.Translate.toString(transform),
-    transition,
+    transition: transition ? transition : undefined,
   };
 
   return (
