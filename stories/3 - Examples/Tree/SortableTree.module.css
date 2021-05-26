@@ -1,0 +1,12 @@
+.wrapper {
+}
+
+/**
+  Without it, when the scroll position is trimmed due to collapse,
+  There's a "jump" in the UI.
+  this makes the jump move pleasant
+*/
+.wrapper > div > div {
+  transition: height 300ms;
+  transition-delay: 1s;
+}
