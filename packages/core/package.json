@@ -34,6 +34,9 @@
     "@dnd-kit/accessibility": "^3.0.0",
     "@dnd-kit/utilities": "^2.0.0"
   },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  },
   "publishConfig": {
     "access": "public"
   }
